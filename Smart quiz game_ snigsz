@@ -51,7 +51,7 @@ int main() {
 
         if (answer == 'B') {
             printf("\nCorrect!! You have scored 5 points!!");
-            score += 5;  // Increment the score
+            score += 5;
         } else {
             printf("\nWrong!! The correct answer is B.\n");
         }
