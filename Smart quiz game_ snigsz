@@ -43,7 +43,7 @@ int main() {
     if (i == 1) {
         printf("The game has started!!\n\n");
         printf("1) What is the largest lake in the world?\n\n");
-        printf("A) Caspian Sea \t B) Baikal \n C) Lake Superior \t D) Ontario\n\n")
+        printf("A) Caspian Sea \t B) Baikal \n C) Lake Superior \t D) Ontario\n\n");
         while ((getchar()) != '\n');
         
         answer = getchar();  
