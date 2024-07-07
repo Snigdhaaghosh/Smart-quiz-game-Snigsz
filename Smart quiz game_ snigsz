@@ -1,0 +1,63 @@
+include <stdio.h>
+
+int main() {
+    int i;
+    char answer;
+    char choice;
+    float score = 0.0;
+    char name[20];
+
+    printf("Welcome to Smart Quiz by Snigsz\n");
+    printf("........Please enter your name....\n\n ");
+    fgets(name, 20, stdin);  
+    printf("Press S to start the game\n\n");
+    printf("Press V to view your score \n\n");
+    printf("Press R to restart the game \n\n");
+    printf("Press Q to exit the game \n\n ");
+    
+    choice = getchar();
+
+    if (choice == 'S') {
+        printf("Game starts in a few seconds!!\n\n");
+        printf("Here are some rules and regulations you should know before playing this game!!\n\n");
+        printf("In this game you will be asked a total of 10 questions. For each right answer you will be scored 5!!\n\n");
+        printf("You will be given 4 options and you have to choose the right option between them.\n\n");
+        printf("There's no negative marking for any wrong answer!!\n\n");
+        printf("Press any one between a, b, c, and d for the right option!! \n\n");
+        printf("Test your knowledge!! \n\n");
+        printf("All The Best!! Keep on!! \n\n");
+        printf("Press 1 to start the game!! \n\n");
+        printf("Press any key to return from the game!!\n\n");
+    } else if (choice == 'V') {
+        printf("Your score is %f\n\n", score);
+    } else if (choice == 'R') {
+        score = 0.0;
+        printf("Your score is %f\n\n", score);
+    } else {
+        printf("Thanks for playing!!\n\n");
+        return 0;
+    }
+
+    scanf("%d", &i); 
+
+    if (i == 1) {
+        printf("The game has started!!\n\n");
+        printf("1) What is the largest lake in the world?\n\n");
+        printf("A) Caspian Sea \t B) Baikal \n C) Lake Superior \t D) Ontario\n\n")
+        while ((getchar()) != '\n');
+        
+        answer = getchar();  
+
+
+        if (answer == 'B') {
+            printf("\nCorrect!! You have scored 5 points!!");
+            score += 5;  // Increment the score
+        } else {
+            printf("\nWrong!! The correct answer is B.\n");
+        }
+    } else {
+        printf("The game has finished!!\n\n");
+    }
+
+    return 0;
+}
