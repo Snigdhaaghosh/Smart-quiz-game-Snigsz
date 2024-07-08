@@ -9,7 +9,7 @@ int main() {
     char name[20];
 
     printf("Welcome to Smart Quiz by Snigsz\n");
-    printf("....... Please Enter your name.........: ");
+    printf("....... Please Enter your name.........:\n ");
     fgets(name, 20, stdin);
 
     printf("Press S to start the game\n");
@@ -101,5 +101,6 @@ printf("Press any key to return\n");
             } else {
                 printf("Wrong!! The correct answer is A. \n");
             }
-    }
+       }
+   }
 }
