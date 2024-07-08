@@ -47,7 +47,7 @@ printf("Press any key to return\n");
                 score += 5;
               total_score=score;
             } else {
-                printf("Wrong!! The correct answer is B.\n");
+                printf("Wrong!! The correct answer is B. \n");
             }
 
             printf("2) What is the Capitol of France? \n");
